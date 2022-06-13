@@ -19,3 +19,14 @@ window.addEventListener('load',function(){
         styledSquare.style["border-style"] = style.value;
     }
 })
+
+//border-color
+window.addEventListener('load',function(){
+    var leftBox = document.querySelector(".left-box");
+    var color = leftBox.querySelector(".color>input");
+    var styledSquare = document.querySelector("#styled-square");
+
+    color.oninput = function(e){
+        styledSquare.style["border-color"] = color.value;
+    }
+})
