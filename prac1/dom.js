@@ -6,6 +6,7 @@ window.addEventListener('load',function(){
 
     width.oninput = function(e){
         styledSquare.style["border-width"] = width.value + "px";
+        changed();
     }
 })
 
@@ -17,6 +18,7 @@ window.addEventListener('load',function(){
 
     style.onchange = function(e){
         styledSquare.style["border-style"] = style.value;
+        changed();
     }
 })
 
@@ -28,5 +30,15 @@ window.addEventListener('load',function(){
 
     color.oninput = function(e){
         styledSquare.style["border-color"] = color.value;
+        changed();
     }
 })
+
+//CSS text
+function changed(){
+    var leftBox = document.querySelector(".left-box");
+    var styledSquare = document.querySelector("#styled-square");
+    var cssText = leftBox.querySelector(".css-text>div")
+
+    cssText.innerHTML = styledSquare.style.cssText;
+}
