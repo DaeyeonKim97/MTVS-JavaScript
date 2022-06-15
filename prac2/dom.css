@@ -1,0 +1,21 @@
+.calculator{
+    /* content-style */
+    padding: 8px;
+
+    /* content-layout */
+    display: grid;
+    grid-template: 
+    "bod bod bod bod" 70px
+    "num num num opr" 100px
+    "num num num opr" 100px
+    "num num num opr" 100px
+    "num num num opr" 100px
+    /100px 100px 100px 100px;
+
+}
+
+.board{
+    grid-area: bod;
+    border-inline: 5px solid gray;
+    text-align: right;
+}
