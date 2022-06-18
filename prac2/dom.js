@@ -14,6 +14,11 @@ window.addEventListener('load',function(){
             return;
         }
 
+        if(e.target.value == "AC"){
+            bod.value = "";
+            return;
+        }
+
         // console.log(e.target.value);
         bod.value += e.target.value;
     }
