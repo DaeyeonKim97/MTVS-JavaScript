@@ -1,3 +1,5 @@
+var done = false;
+
 //button input
 window.addEventListener('load',function(){
     var calculator = document.querySelector(".calculator");
@@ -5,12 +7,17 @@ window.addEventListener('load',function(){
     var bod = calculator.querySelector(".board");
 
     btns.onclick = function(e){
+        if(done == true){
+            bod.value = "";
+        }
+
         if(e.target.nodeName != "INPUT")
             return;
         
         if(e.target.value == "="){
             // console.log(bod.value);
             bod.value = eval(bod.value);
+            done = true;
             return;
         }
 
@@ -21,5 +28,6 @@ window.addEventListener('load',function(){
 
         // console.log(e.target.value);
         bod.value += e.target.value;
+        done = false;
     }
 })
