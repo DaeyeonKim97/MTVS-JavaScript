@@ -63,7 +63,7 @@
     position: absolute;
     top: calc(50% - 150px);
     left: calc(50% - 100px);
-    z-index: 20;
+    z-index: 30;
 
     transition: 1s;
 }
@@ -85,7 +85,7 @@
     position: absolute;
     top: calc(50% - 75px);
     left: calc(70% - 50px);
-    z-index: 30;
+    z-index: 20;
 
     transition: 1s;
 }
