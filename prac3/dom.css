@@ -31,7 +31,7 @@
     border: 2px solid white;
     border-radius: 10px;
 
-    background-color: rgba(5, 200, 200, 0.15);
+    background-color: rgba(5, 200, 200, 0.5);
 
     /* content-style */
     text-indent: -999px;
@@ -41,6 +41,9 @@
     position: absolute;
     top: calc(50% - 75px);
     left: calc(30% - 50px);
+    z-index: 10;
+
+    transition: 1s;
 }
 
 .second{
@@ -50,7 +53,7 @@
     border: 2px solid white;
     border-radius: 10px;
 
-    background-color: rgba(0, 255, 255, 0.3);
+    background-color: rgba(0, 255, 255, 0.9);
 
     /* content-style */
     text-indent: -999px;
@@ -60,6 +63,9 @@
     position: absolute;
     top: calc(50% - 150px);
     left: calc(50% - 100px);
+    z-index: 20;
+
+    transition: 1s;
 }
 
 .third{
@@ -69,7 +75,7 @@
     border: 2px solid white;
     border-radius: 10px;
 
-    background-color: rgba(0, 200, 200, 0.150);
+    background-color: rgba(0, 200, 200, 0.50);
 
     /* content-style */
     text-indent: -999px;
@@ -79,4 +85,7 @@
     position: absolute;
     top: calc(50% - 75px);
     left: calc(70% - 50px);
+    z-index: 30;
+
+    transition: 1s;
 }
